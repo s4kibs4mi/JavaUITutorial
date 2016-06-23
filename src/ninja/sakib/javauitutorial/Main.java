@@ -8,8 +8,8 @@ import ninja.sakib.javauitutorial.a.MainActivity;
 
 public class Main {
     public static void main(String args[]) {
-        MainActivity mainActivity = new MainActivity();
-        mainActivity.init();
-        mainActivity.setVisible(true);
+        MainActivity mainActivity = new MainActivity();     // Initializing MainActivity
+        mainActivity.init();                                //
+        mainActivity.setVisible(true);                      // Calling frame to be visible
     }
 }

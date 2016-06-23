@@ -19,23 +19,23 @@ public class MainActivity extends JFrame implements ActionListener {
 
     public void init() {
 
-        setLayout(null);    // Setting frame layout to null
-        setPreferredSize(new Dimension(500, 500));  // Setting frame size
+        setLayout(null);                                        // Setting frame layout to null
+        setPreferredSize(new Dimension(500, 500));              // Setting frame size
 
-        sampleText = new JTextArea();
-        sampleText.setBounds(100, 50, 300, 200);
-        add(sampleText);
+        sampleText = new JTextArea();                           // Initializing Textarea
+        sampleText.setBounds(100, 50, 300, 200);                // Setting sample text position in frame
+        add(sampleText);                                        // Adding sample text to frame
 
-        sampleTextCount = new JLabel("???");
-        sampleTextCount.setBounds(100, 270, 300, 50);
-        add(sampleTextCount);
+        sampleTextCount = new JLabel("Character count ???");    // Initializing Label
+        sampleTextCount.setBounds(100, 270, 300, 50);           // Setting sampleTextCount position in frame
+        add(sampleTextCount);                                   // Adding sampleTextCount to frame
 
-        getCharCountBtn = new JButton("Get Count");
-        getCharCountBtn.setBounds(200, 350, 100, 50);
-        getCharCountBtn.addActionListener(this);
-        add(getCharCountBtn);
+        getCharCountBtn = new JButton("Get Count");             // Initializing Button
+        getCharCountBtn.setBounds(200, 350, 100, 50);           // Setting getCharCountBtn position in frame
+        getCharCountBtn.addActionListener(this);                // Adding action lister to button
+        add(getCharCountBtn);                                   // Adding getCharCountBtn to frame
 
-        pack();
+        pack();                                                 // Initialize & Decorate frame
     }
 
     @Override
